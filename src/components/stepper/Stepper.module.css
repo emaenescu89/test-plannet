@@ -1,0 +1,30 @@
+.container {
+	align-items: center;
+	display: flex;
+	justify-content: left;
+}
+
+span {
+	border-radius: 50%;
+	display: inline-block;
+	height: 22px;
+	margin-right: 6px;
+  width: 22px;
+}
+
+
+span.correct {
+	background-color: #51C912;
+}
+
+span.current {
+	background-color: white;
+}
+
+span.disabled {
+	background-color: lightgrey;
+}
+
+span.wrong {
+	background-color: #FE0100;
+}

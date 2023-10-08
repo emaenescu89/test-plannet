@@ -1,0 +1,35 @@
+.container {
+	color: white;
+	display: flex;
+	flex-direction: column;
+	font-size: 14px;
+	font-weight: bold;
+	min-width: 300px;
+	position: relative;
+	width: 33%;
+}
+.container p {
+	position: absolute;
+	bottom: -40px;
+}
+
+.progressContainer {
+	background-color: white;
+	border-radius: 2px;
+  height: 50px;
+	width: 100%;
+}
+
+.progress {
+	border-radius: 2px;
+	height: 50px;
+}
+
+.progress.green {
+	background-color: #4CAF50;
+}
+
+.progress.red {
+	background-color: red;
+}
+

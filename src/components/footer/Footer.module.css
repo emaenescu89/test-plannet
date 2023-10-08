@@ -1,0 +1,15 @@
+.container {
+	align-items: center;
+	bottom: 0;
+	background-color: white;
+	display: flex;
+	height: 54px;
+	justify-content: right;
+	position: fixed;
+	width: 100%;
+}
+
+img {
+	margin-right: 6.3%;
+	max-height: 20px;
+}

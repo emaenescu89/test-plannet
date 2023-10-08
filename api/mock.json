@@ -1,0 +1,71 @@
+{
+	"questions": [
+		{
+			"answers": [{
+				"correct": true,
+				"id": 0,
+				"text": "Die Maldiven"
+			}, {
+				"correct": false,
+				"id": 1,
+				"text": "Die Azoren"
+			}],
+			"id": 0,
+			"image": "lh-1",
+			"otherResponses": {
+				"true": 33,
+				"false": 67 
+			},
+			"rightAnswer": {
+				"description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic",
+				"id": 0,
+				"title": "Das sind die Malediven."
+			},
+			"text": "Unter uns eine Gruppe von Atollen. Was sehen wir?"
+		}, {
+			"answers": [{
+				"correct": false,
+				"id": 0,
+				"text": "Chicago"
+			}, {
+				"correct": true,
+				"id": 1,
+				"text": "New York"
+			}],
+			"id": 1,
+			"image": "lh-2",
+			"otherResponses": {
+				"true": 45,
+				"false": 55 
+			},
+			"rightAnswer": {
+				"description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+				"id": 1,
+				"title": "Das sind die New York."
+			},
+			"text": "Second question"
+		}, {
+			"answers": [{
+				"correct": true,
+				"id": 0,
+				"text": "London"
+			}, {
+				"correct": false,
+				"id": 1,
+				"text": "Berlin"
+			}],
+			"id": 2,
+			"image": "lh-3",
+			"otherResponses": {
+				"true": 93,
+				"false": 7 
+			},
+			"rightAnswer": {
+				"description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting",
+				"id": 0,
+				"title": "Das sind die London."
+			},
+			"text": "Third question"
+		}
+	]
+}

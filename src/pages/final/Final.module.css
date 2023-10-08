@@ -1,0 +1,27 @@
+.wrapper {
+	align-items: center;
+	background: #fff url("/public/images/bg_home.jpg") no-repeat center;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+.container {
+	align-items: center;
+	background-size: cover;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: calc(101px + 4%) 6.3% 54px 6.3%;
+}
+
+.container h1 {
+	text-align: center;
+}
+
+.container p {
+	text-align: center;
+}

@@ -1,0 +1,16 @@
+.container {
+	align-items: center;
+	background-color: white;
+	display: flex;
+	height: 101px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.logo {
+	cursor: pointer;
+	margin-left: 6.3%;
+	max-height: 100%;
+	max-width: 50%;
+}

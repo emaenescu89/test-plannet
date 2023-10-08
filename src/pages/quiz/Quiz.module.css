@@ -1,0 +1,86 @@
+.wrapper {
+	background: #fff url("/public/images/bg_home.jpg") no-repeat center;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.container {
+	color: white;
+	display: flex;
+	flex: 1 1 auto;
+	flex-direction: column;
+	padding: calc(101px + 4%) 6.3% 80px 6.3%;
+}
+
+.questionContainer {
+	display: flex;
+	flex: 1 1 auto;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-top: 20px;
+	width: 100%;
+}
+
+.question {
+	max-width: 650px;
+}
+
+.options {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+.options button {
+	flex: 0 0 33%;
+	height: 56px;
+	white-space: nowrap;
+}
+
+.responseContainer {
+	display: flex;
+	flex: 1 1 auto;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-top: 20px;
+	width: 100%;
+}
+
+.responseContainer button {
+	bottom: 0;
+	font-size: 32px;
+	height: 60px;
+	margin: auto 0;
+	padding: 0;
+  position: absolute;
+	right: 0;
+	top: 0;
+	width: 60px;
+	z-index: 999;
+}
+
+.stats {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+}
+
+.answerCard {
+	align-self: flex-end;
+}
+
+@media only screen and (max-width: 600px) {
+	.responseContainer button {
+		font-size: 24px;
+		height: 40px;
+		margin: calc(101px + 2%) 0;
+		width: 40px;
+	}
+
+	.options button {
+		flex: 1 0 100%;
+		margin-bottom: 12px;
+	}
+}

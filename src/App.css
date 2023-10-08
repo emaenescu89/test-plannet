@@ -1,0 +1,58 @@
+.page-content {
+	align-items: center;
+	background: #fff url("/public/images/bg_home.jpg") no-repeat center;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+button {
+	background-color: white;
+	border: none;
+	border-radius: 2px;
+	color: #010368;
+	cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+	font-size: 1.4vmax;
+	height: 62px;
+	padding: 0 32px;
+}
+
+button.accent {
+	background-color: #010368;
+	color: white;
+}
+
+button:hover {
+	color: lightgrey;
+}
+
+h1 {
+	font-size: 72px;
+	font-size: 7.8vmax;
+	margin: 0;
+}
+
+h2 {
+	font-size: 32px;
+	font-size: 4vmax;
+	margin: 0;
+}
+
+p {
+	font-size: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  button {
+    font-size: 14px;
+    height: 40px;
+  }
+
+	p {
+		font-size: 18px;
+	}
+}
