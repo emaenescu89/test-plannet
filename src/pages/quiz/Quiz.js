@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import AnswerCard from '../../components/answerCard/AnswerCard';
+import Loader from '../../components/loader/Loader';
 import Stats from '../../components/stats/Stats';
 import Stepper from '../../components/stepper/Stepper';
 
@@ -9,6 +10,7 @@ import styles from './Quiz.module.css';
 
 const Quiz = () => {
 	const [ current, setCurrent ] = useState(0);
+	const [ loading, setLoading ] = useState(true);
 	const [ questions, setQuestions ] = useState([]);
 	const [ responses, setResponses ] = useState([]);
 	const [ viewResponse, setViewResponse ] = useState(null);
@@ -23,7 +25,14 @@ const Quiz = () => {
 
 		fetch('http://localhost:3030/questions', requestOptions)
 			.then((response) => response.json())
-			.then((result) => setQuestions(result))
+			.then((result) => {
+
+				setTimeout(() => {
+					setQuestions(result);
+					setLoading(false);
+				}, 2000);
+
+			})
 			.catch((error) => console.log("error", error));
 	};
 
@@ -44,6 +53,7 @@ const Quiz = () => {
 			navigate('/final', {state: { rightAnswers }});
 		} else {
 			setViewResponse(false);
+			setCurrent(curr => curr + 1);
 		}
 	}
 
@@ -95,8 +105,12 @@ const Quiz = () => {
 						percentage={q.otherResponses.true}
 						text="allert Slieler lagen rightig"
 					/>
+					<button
+						className={`accent ${styles.nextBtn}`}
+						onClick={onClickNextBtn}>
+							<i className="arrow right"></i>
+					</button>
 				</div>
-				<button className={`accent ${styles.nextBtn}`} onClick={onClickNextBtn}> {`>`} </button>
 			</div>
 		);
 	};
@@ -109,16 +123,14 @@ const Quiz = () => {
 		responses.length > 0 && setViewResponse(true);
 	}, [responses]);
 
-	useEffect(() => {
-		viewResponse === false && setCurrent(curr => curr + 1); 
-	}, [viewResponse]);
 
 	return (
 		<div className={styles.wrapper} style={{backgroundImage: `url(${getUrl()})`}}>
+			{loading && <Loader />}
 			<div className={styles.container}>
 				<Stepper activeStep={current} steps={getSteps(questions.length, responses)} />
-				{questions.length && !viewResponse > 0 && renderQuestion(questions[current])}
-				{viewResponse > 0 && renderResponse(questions[current], responses[current])}
+				{!viewResponse && questions.length ? renderQuestion(questions[current]): <></>}
+				{viewResponse && renderResponse(questions[current], responses[current])}
 			</div>
 		</div>
 	);

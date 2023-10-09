@@ -8,7 +8,12 @@ const Header = () => {
 
 	return(
 		<div className={styles.container}>
-			<img alt="logo" className={styles.logo} src={logo} onClick={() => navigate('/')}/>
+			<img
+				alt="logo"
+				className={styles.logo}
+				src={logo}
+				onClick={() => navigate('/')}
+			/>
 		</div>
 	);
 }

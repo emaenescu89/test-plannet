@@ -2,15 +2,14 @@
 	color: white;
 	display: flex;
 	flex-direction: column;
-	font-size: 14px;
 	font-weight: bold;
-	min-width: 300px;
+	min-width: 200px;
 	position: relative;
 	width: 33%;
 }
 .container p {
+	bottom: -46px;
 	position: absolute;
-	bottom: -40px;
 }
 
 .progressContainer {

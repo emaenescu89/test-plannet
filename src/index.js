@@ -1,15 +1,15 @@
-import React from 'react';
-import ReactDOMClient from 'react-dom/client';
-import { StrictMode } from 'react';
+import React from "react";
+import ReactDOMClient from "react-dom/client";
+import { StrictMode } from "react";
 
-import App from './App';
-import { BrowserRouter } from 'react-router-dom';
+import App from "./App";
+import { BrowserRouter } from "react-router-dom";
 
-import reportWebVitals from './reportWebVitals';
+import reportWebVitals from "./reportWebVitals";
 
-import './index.css';
+import "./index.css";
 
-const rootElement = document.getElementById('root');
+const rootElement = document.getElementById("root");
 const root = ReactDOMClient.createRoot(rootElement);
 
 root.render(

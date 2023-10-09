@@ -4,12 +4,12 @@ const Stepper = ({ activeStep = 0, steps = [] }) => {
 
 	const classes = steps.length > 0 ? steps.reduce((acc, curr) => {
 
-		if (acc.length === activeStep) {
-			acc = [...acc, 'current'];
-		} else if (curr === true) {
+		if (curr === true) {
 			acc = [...acc, 'correct'];
 		} else if (curr === false) {
 			acc = [...acc, 'wrong'];
+		} else if (acc.length === activeStep) {
+			acc = [...acc, 'current'];
 		} else {
 			acc = [...acc, 'disabled'];
 		}

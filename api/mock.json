@@ -43,7 +43,7 @@
 				"id": 1,
 				"title": "Das sind die New York."
 			},
-			"text": "Second question"
+			"text": "Lorem Ipsum has been the industry's standard dummy text ever since?"
 		}, {
 			"answers": [{
 				"correct": true,
@@ -65,7 +65,7 @@
 				"id": 0,
 				"title": "Das sind die London."
 			},
-			"text": "Third question"
+			"text": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s?"
 		}
 	]
 }

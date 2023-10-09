@@ -9,12 +9,11 @@ span {
 	display: inline-block;
 	height: 22px;
 	margin-right: 6px;
-  width: 22px;
+	width: 22px;
 }
 
-
 span.correct {
-	background-color: #51C912;
+	background-color: #51c912;
 }
 
 span.current {
@@ -26,5 +25,5 @@ span.disabled {
 }
 
 span.wrong {
-	background-color: #FE0100;
+	background-color: #fe0100;
 }
